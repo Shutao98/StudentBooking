@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Student Advisor Booking</title>
+</head>
+<body bgcolor="">
+<h2>Student Advisor Booking</h2>
+
+<form name="Student Advisor Booking form" action="BookingServlet" method="post" >
+<font size="3">
+		Enter Your Student ID:  <input type="text" name="id" size="25" value=""><br><br>
+		Enter Your Name:  <input type="text" name="name" size="30" value=""><br><br>
+		Enter Your Email: <input type="text" name="email" size="30" value=""><br><br>
+		Enter Your Phone Number: <input	type="text" name="phone" size="20" value=""><br><br>
+		
+		Select the Campus:<br>
+		<input type="radio" name="rdCampus" value="Ashtonbee Campus"/>Ashtonbee Campus<br>
+		<input type="radio" name="rdCampus" value="Eglinton Learning Site"/>Eglinton Learning Site<br>
+		<input type="radio" name="rdCampus" value="Morningside Campus"/>Morningside Campus<br>
+		<input type="radio" name="rdCampus" value="Pickering Learning Site"/>Pickering Learning Site<br>
+		<input type="radio" name="rdCampus" value="Progress Campus"/>Progress Campus<br>
+		<input type="radio" name="rdCampus" value="Story Arts Centre"/>Story Arts Centre<br><br>	
+		
+		Select Your School:<br>		
+		<input type="radio" name="rdSchool" value="School of Advancement"/>School of Advancement<br>
+		<input type="radio" name="rdSchool" value="School of Business"/>School of Business<br>
+		<input type="radio" name="rdSchool" value="School of Communications, Media, Arts and Design"/>School of Communications, Media, Arts and Design<br>
+		<input type="radio" name="rdSchool" value="School of Community and Health Studies"/>School of Community and Health Studies<br>
+		<input type="radio" name="rdSchool" value="School of Engineering Technology and Applied Science"/>School of Engineering Technology and Applied Science<br>
+		<input type="radio" name="rdSchool" value="School of Hospitality, Tourism and Culinary Arts"/>School of Hospitality, Tourism and Culinary Arts<br>
+		<input type="radio" name="rdSchool" value="School of Transportation"/>School of Transportation<br>
+		<input type="radio" name="rdSchool" value="Part Time Learning"/>Part Time Learning<br><br>
+		
+		Select the Advisor Type:<br>	
+		<input type="radio" name="rdAdvisor" value="Program Coordinator"/>Program Coordinator<br>
+		<input type="radio" name="rdAdvisor" value="Academic Advisor"/>Academic Advisor<br>
+		<input type="radio" name="rdAdvisor" value="Faculty member"/>Faculty member<br><br>
+		
+		Select the Week:<br>
+		<input type="radio" name="rdWeek" value="Week Before Semester Starting"/>Week Before Semester Starting<br>
+		<input type="radio" name="rdweek" value="Week After Semester Starting"/>Week After Semester Starting<br><br>
+		
+		Select the Week Day:<br>
+		<input type="radio" name="rdWeekDay" value="Monday"/>Monday<br>
+		<input type="radio" name="rdWeekDay" value="Tuesday"/>Tuesday<br>
+		<input type="radio" name="rdWeekDay" value="Wednesday"/>Wednesday<br>
+		<input type="radio" name="rdWeekDay" value="Thursday"/>Thursday<br>
+		<input type="radio" name="rdWeekDay" value="Friday"/>Friday<br><br>
+						
+		Select Your Time Schedule: <br>
+		<input type="radio" name="rdBatch" value="08:00-08:15"/>08:00-08:15
+		<input type="radio" name="rdBatch" value="08:15-08:30"/>08:15-08:30
+		<input type="radio" name="rdBatch" value="08:30-08:45"/>08:30-08:45
+		<input type="radio" name="rdBatch" value="08:45-09:00"/>08:45-09:00<br>
+		<input type="radio" name="rdBatch" value="09:00-09:15"/>09:00-09:15
+		<input type="radio" name="rdBatch" value="09:15-09:30"/>09:15-09:30
+		<input type="radio" name="rdBatch" value="09:30-09:45"/>09:30-09:45
+		<input type="radio" name="rdBatch" value="09:45-10:00"/>09:45-10:00<br>
+		<input type="radio" name="rdBatch" value="10:00-10:15"/>10:00-10:15
+		<input type="radio" name="rdBatch" value="10:15-10:30"/>10:15-10:30
+		<input type="radio" name="rdBatch" value="10:30-10:45"/>10:30-10:45
+		<input type="radio" name="rdBatch" value="10:45-11:00"/>10:45-11:00<br>
+		<input type="radio" name="rdBatch" value="11:00-11:15"/>11:00-11:15
+		<input type="radio" name="rdBatch" value="11:15-11:30"/>11:15-11:30
+		<input type="radio" name="rdBatch" value="11:30-11:45"/>11:30-11:45
+		<input type="radio" name="rdBatch" value="11:45-12:00"/>11:45-12:00<br>
+		<input type="radio" name="rdBatch" value="13:00-13:15"/>13:00-13:15
+		<input type="radio" name="rdBatch" value="13:15-13:30"/>13:15-13:30
+		<input type="radio" name="rdBatch" value="13:30-13:45"/>13:30-13:45
+		<input type="radio" name="rdBatch" value="13:45-14:00"/>13:45-14:00<br>
+		<input type="radio" name="rdBatch" value="14:00-14:15"/>14:00-14:15
+		<input type="radio" name="rdBatch" value="14:15-14:30"/>14:15-14:30
+		<input type="radio" name="rdBatch" value="14:30-14:45"/>14:30-14:45
+		<input type="radio" name="rdBatch" value="14:45-15:00"/>14:45-15:00<br><br><br>
+
+		<input type="submit" value="Submit" id="btnSubmit">
+		<input type="submit" value="View" id="btnView" onclick="form.action='ViewServlet'">
+		<input type="reset" value="Clear" id="btnClear">
+		</font>
+	</form>
+</body>
+</html>
