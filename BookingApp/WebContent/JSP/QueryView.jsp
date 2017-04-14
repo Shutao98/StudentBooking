@@ -18,7 +18,7 @@ Enter your Name: <input type="text" name="name" value="${param.name}"><br><br>
 	String[] b = a.split(" ");
 	
 	out.print("Enter your Student ID: <input type=\"text\" name=\"id\" value=" + bean.getStudentId() + "><br><br>");
-	out.print("Enter your Name: <input type=\"text\" name=\"name\" value=" + b[1] + "><br><br>");
+	out.print("Enter your Name: <input type=\"text\" name=\"name\" value=" + bean.getName() + "><br><br>");
 	out.print("Enter your Email: <input type=\"text\" name=\"email\" value=" + bean.getEmail() + "><br><br>");
 	out.print("Enter your Phone: <input type=\"text\" name=\"phone\" value=" + bean.getPhone() + "><br><br>");
 	
